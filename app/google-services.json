@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "411574769817",
+    "project_id": "sschat-5d7a4",
+    "storage_bucket": "sschat-5d7a4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:411574769817:android:334e622568d3400d674008",
+        "android_client_info": {
+          "package_name": "com.sun.sschat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "411574769817-kuv148kh37terju1u7crcng2bjfqe3hn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAusuWRFLwpzk1GnL4iud2l9574FjG7gDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "411574769817-kuv148kh37terju1u7crcng2bjfqe3hn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
