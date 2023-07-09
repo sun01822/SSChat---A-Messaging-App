@@ -38,13 +38,20 @@
             android:textStyle="bold" />
 
 
-        <ImageView
-            android:id="@+id/call"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="120dp"
-            android:src="@drawable/call_icon" />
+        <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
+            android:id="@+id/voice_call_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="80dp"
+            android:backgroundTint="@color/white"
+            />
+
+        <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
+            android:id="@+id/video_call_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="30dp"
+            android:backgroundTint="@color/white"/>
 
 
 
