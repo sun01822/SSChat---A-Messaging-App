@@ -10,7 +10,6 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.sun.sschat.R
 import com.sun.sschat.adapter.ChatAdapter
 import com.sun.sschat.databinding.FragmentChatBinding
 import com.sun.sschat.model.UserModel

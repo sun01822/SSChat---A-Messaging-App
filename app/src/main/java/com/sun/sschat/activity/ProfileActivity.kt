@@ -2,18 +2,21 @@ package com.sun.sschat.activity
 
 import android.content.Intent
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
 import com.sun.sschat.MainActivity
-import com.sun.sschat.R
 import com.sun.sschat.databinding.ActivityProfileBinding
 import com.sun.sschat.model.UserModel
+import com.zegocloud.uikit.prebuilt.call.config.ZegoNotificationConfig
+import com.zegocloud.uikit.prebuilt.call.invite.ZegoUIKitPrebuiltCallInvitationConfig
+import com.zegocloud.uikit.prebuilt.call.invite.ZegoUIKitPrebuiltCallInvitationService
 import java.util.*
+
 
 class ProfileActivity : AppCompatActivity() {
     private lateinit var binding: ActivityProfileBinding
@@ -89,4 +92,5 @@ class ProfileActivity : AppCompatActivity() {
             }
         }
     }
+
 }
