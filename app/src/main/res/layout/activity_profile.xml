@@ -55,7 +55,15 @@
                android:layout_height="wrap_content"
                android:layout_marginTop="18dp"
                android:text="Continue" />
-
+    <ProgressBar
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:id="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false" />
 
 
 
