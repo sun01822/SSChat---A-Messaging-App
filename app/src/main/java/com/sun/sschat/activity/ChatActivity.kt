@@ -100,10 +100,38 @@ class ChatActivity : AppCompatActivity() {
                 }
             })
 
-        binding.call.setOnClickListener {
+        /*binding.call.setOnClickListener {
             val intent  = Intent(this@ChatActivity, CallActivity::class.java)
             intent.putExtra("receiverId", usernumber)
             startActivity(intent)
+        }*/
+        if(usernumber.isNotEmpty()){
+            setVoiceCall(usernumber.trim())
+            setVideoCall(usernumber.trim())
         }
+    }
+
+    private fun setVoiceCall(targetUserID: String){
+        binding.voiceCallBtn.setIsVideoCall(false)
+        binding.voiceCallBtn.resourceID = "zego_uikit_call"
+        binding.voiceCallBtn.setInvitees(
+            listOf(
+                ZegoUIKitUser(
+                    targetUserID,
+                    targetUserID
+                )
+            ))
+    }
+
+    private fun setVideoCall(targetUserID: String){
+        binding.videoCallBtn.setIsVideoCall(true)
+        binding.videoCallBtn.resourceID = "zego_uikit_call"
+        binding.videoCallBtn.setInvitees(
+            listOf(
+                ZegoUIKitUser(
+                    targetUserID,
+                    targetUserID
+                )
+            ))
     }
 }
