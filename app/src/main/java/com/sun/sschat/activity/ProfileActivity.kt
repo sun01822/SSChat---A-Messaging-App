@@ -3,6 +3,7 @@ package com.sun.sschat.activity
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -47,6 +48,8 @@ class ProfileActivity : AppCompatActivity() {
         }
 
         binding.continueBtn.setOnClickListener {
+            binding.continueBtn.visibility = View.GONE
+            binding.progressBar.visibility = View.VISIBLE
             if(binding.userName.text!!.isEmpty()){
                 Toast.makeText(this, "Please enter your Name", Toast.LENGTH_SHORT).show()
             }
