@@ -59,6 +59,5 @@ class MainActivity : AppCompatActivity() {
             ID,
             callInvitationConfig
         )
-        Toast.makeText(this, "Services created successfully", Toast.LENGTH_SHORT).show()
     }
 }
