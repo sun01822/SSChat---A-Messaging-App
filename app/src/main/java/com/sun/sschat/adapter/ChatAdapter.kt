@@ -32,6 +32,9 @@ class ChatAdapter(var context: Context, var list: ArrayList<UserModel>) : Recycl
         holder.itemView.setOnClickListener {
             val intent = Intent(context, ChatActivity::class.java)
             intent.putExtra("uid", user.uid)
+            intent.putExtra("userImage", user.imageUrl)
+            intent.putExtra("userName", user.name)
+            intent.putExtra("phone", user.number)
             context.startActivity(intent)
         }
     }
