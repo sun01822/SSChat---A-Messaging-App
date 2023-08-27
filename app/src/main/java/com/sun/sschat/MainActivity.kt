@@ -43,8 +43,8 @@ class MainActivity : AppCompatActivity() {
         getServices(auth.currentUser!!.phoneNumber.toString().trim())
     }
     private fun getServices(ID: String){
-        val appID : Long = 759924298   // yourAppID
-        val appSign = "e81430b0fcdf01ac706557ecf42b628265ad5b94461167ff31a66f8048630b52"  // yourAppSign
+        val appID : Long =   // yourAppID
+        val appSign = ""  // yourAppSign
         val callInvitationConfig = ZegoUIKitPrebuiltCallInvitationConfig()
         callInvitationConfig.notifyWhenAppRunningInBackgroundOrQuit = true
         val notificationConfig = ZegoNotificationConfig()
